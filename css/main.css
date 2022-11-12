@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --main-color:#000;
+    --secound-color : rgb(105, 104, 104);
+    --third-color :#e74c3c;
+}
+
+
+
+/*======== nav bar==========*/
+.item-all
+{
+    position: relative;
+    top: 38px;
+}
+.item-nav-text
+{
+    margin-left: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    
+}
+
+.banner-image
+{
+    background-image: url('../img/hector-bermudez-0WSt2Wpmz8E-unsplash.jpg');
+    background-size: cover;
+}
+
+.navbar-nav .nav-item
+{
+    padding: 0px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.navbar-nav .nav-item a:hover
+{
+    color: var(--third-color) !important;
+    
+}
+
+.banner-image
+{
+    height: 110vh;
+}
+
+.banner-image h1
+{
+    color: white ;
+    
+} 
+
+.banner-image span
+{
+    color: var(--third-color);
+}
+@media screen and (max-width: 1400px )
+{
+   body
+   {
+       max-width: 100%;
+   }
+}
+
+@media screen and (max-width: 768px )
+{
+    body
+    {
+        max-width: 100%;
+    }    
+    .item-all
+    {
+        text-align: center;
+    }
+    #player
+    {
+        width: 360px !important;
+    }
+}
+@media screen and (max-width: 723px )
+{
+    body
+    {
+        max-width: 100%;
+    }   
+    .tow
+    {
+        position: relative;
+        top: 21px;
+    }
+    .one
+    {
+        position: relative;
+        top: 59px !important;
+    }
+    
+    
+}
+/*==================================End nav bar==============================*/
+
+
+
+
+/*==================Home Section ====================*/
+.item-home
+{
+    margin-top: 6rem;
+}
+.item-home h4
+{
+    color: var(--third-color);
+}
+.item-home p
+{
+    color: var(--secound-color);
+}
+.item-img
+{
+    border-radius: 10px;
+    
+}
+.item-container
+{
+    position: relative;
+   font-family: Arial;
+}
+.textover
+{
+    position: relative;
+}
+.textover h5
+{
+    position: absolute;
+    bottom: -17px;
+    left: 16px;
+    box-sizing: border-box;
+    width: 87%;
+    padding: 7px;
+    color: white;
+    overflow: hidden;
+}
+.textover p 
+{
+    color: var(--third-color)
+}
+
+.img-area
+{
+    position: relative;
+    overflow: hidden;
+}
+.img-area img
+{
+    border-radius: 10px;
+}
+.img-text,
+.img-area::after
+{
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+}
+.img-area::after
+{
+    content: '';
+    height: 100%;
+    top: 130px;
+    transition: .5s;
+    
+}
+.img-area:hover::after
+{
+    background: linear-gradient(to  bottom , rgba(199,0,57,.01) 0 ,  rgba(199,0,57,.25) 25%, rgba(199,0,57,.75) 75%  );
+}
+
+@media screen and (max-width:768px) 
+{
+     .item-home
+     {
+         text-align: center;
+     }   
+     .item-service
+     {
+         text-align: center;
+     } 
+}
+
+/*================================ End Home section =================================*/
+
+/*================================ Service Section =================================*/
+.item-service
+{
+    margin-top: 9rem;
+}
+.item-service h5
+{
+  color: var(--third-color)
+}
+.item-service p
+{
+  color: var(--secound-color);
+}
+
+/*================================ End Service Section =================================*/
+
+
+/*================================ CLIENT Section =================================*/
+.item-client
+{
+    margin-top: 1rem;
+}
+.item-client p
+{
+  color: var(--third-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.item-bg
+{
+   background-color: #d1d8dd; 
+   padding: 40px;
+}
+.item-bg .item-text
+{
+    margin-top: 20px;
+    color: var(--secound-color);
+    font-size: 32px;
+    font-family: 'Jost', sans-serif;
+
+}
+
+/*================================ END CLIENT Section =================================*/
+
+
+/*================================ Boost business Section =================================*/
+.item-boost-bg
+{
+    background: #1f2229;
+    padding: 45px;
+}
+
+.item-boost h3 , p ,span
+{
+  color: white;
+}
+.item-boost .text-one ,.par-one 
+{
+    margin-left: 80px !important;
+}
+.item-boost span
+{
+    margin-left: 80px !important;
+    font-size: 20px;
+}
+/*================================ End Boost business Section =================================*/
+
+
+/*======================= Footer =============================*/
+
+.footer
+  {
+    padding:  80px  0;
+    background-color:#000;
+  }
+  
+  .footer__logo
+  {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  
+  
+  .footer__description{
+    font-size: larger;
+  }
+  
+  .footer__social{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color: var(--dark-main-color);
+  }
+  
+  .footer__title{
+    color: #fff;
+    font-weight: bold;
+   
+  }
+  .footer__head
+  {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+  }
+  .footer-larg
+  {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 80px;
+  }
+  
+  .footer__link{
+    color: #4d4d4d;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    
+  }
+  
+  .footer__link:hover{
+    color: #fff;
+  }
+  
+  .footer__link__list{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -34px;
+  }
+
+ 
+.social__logo 
+{
+    margin-top: 20px;
+    margin-left: -14px;
+    color: white;
+}
+@media screen and (max-width: 768px )
+{
+    body
+    {
+        max-width: 100%;
+    }   
+    .social__logo a 
+    {
+        font-size: 19.8px !important;
+    } 
+}
+
+  
+/*===================== End Footer =============================*/
+
+/**** Scroll top ****/
+.scrolltop
+{
+    position: fixed;
+    right: 40rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: .4rem;
+    background: var(--third-color);
+    z-index: +1;
+    transition: .4s;
+    visibility: hidden;
+    border-radius: 50%;
+}
+
+  .scrolltop:hover{
+    background-color: #4d4d4d;
+  }
+  
+  .scrolltop__icon{
+    font-size: 1.8rem;
+    color: azure;
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+
